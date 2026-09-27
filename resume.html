@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume — Reuben Lawrence</title>
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem("theme");
+    if (t) document.documentElement.setAttribute("data-theme", t);
+  } catch (e) {}
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a href="index.html" class="brand">Reuben Lawrence</a>
+    <div class="nav-mid">
+      <ul class="navlinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html" class="active">Resume</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="wrap">
+    <div class="context-line"></div>
+    <h1>Resume</h1>
+    <p class="lede">The full resume, rendered here — or download the PDF.</p>
+    <div class="resume-actions">
+      <a class="btn" href="resume.pdf" download>Download PDF</a>
+    </div>
+
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <div>
+          <div class="entry-title">B.Tech, Computer Science</div>
+          <div class="entry-org">Indian Institute of Technology Madras</div>
+        </div>
+        <div class="entry-date">2023 – 2027</div>
+      </div>
+      <p style="margin-top:6px; color: var(--ink-muted);">CGPA: 9.86</p>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <div>
+          <div class="entry-title">XII — BIEAP</div>
+          <div class="entry-org">Sri Chaitanya Junior College</div>
+        </div>
+        <div class="entry-date">2023</div>
+      </div>
+      <p style="margin-top:6px; color: var(--ink-muted);">97.35%</p>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <div>
+          <div class="entry-title">X — AISSE</div>
+          <div class="entry-org">Sri Chaitanya Techno School</div>
+        </div>
+        <div class="entry-date">2021</div>
+      </div>
+      <p style="margin-top:6px; color: var(--ink-muted);">95%</p>
+    </div>
+
+    <h2>Professional experience</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <div>
+          <div class="entry-title">Software Engineering Intern</div>
+          <div class="entry-org">Optiver · Sydney, Australia</div>
+        </div>
+        <div class="entry-date">May 18 – Jul 9, 2026</div>
+      </div>
+      <ul><li>Worked as a software engineering intern, contributing to software engineering projects at the trading firm.</li></ul>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <div>
+          <div class="entry-title">Optiver Future Focus: Technology</div>
+          <div class="entry-org">Optiver · Mumbai, India</div>
+        </div>
+        <div class="entry-date">Jun 16–20, 2025</div>
+      </div>
+      <ul><li>Learned how software engineering works at a trading firm through workshops and activities hosted by the Optiver team.</li></ul>
+    </div>
+
+    <h2>Projects</h2>
+    <div class="entry">
+      <div class="entry-title">StarPlat MLIR Migration</div>
+      <ul>
+        <li>Developed the StarPlat-to-MLIR translation layer, converting StarPlat programs into a structured MLIR representation and enabling integration with a multi-backend compilation pipeline supporting sequential CPU and parallel OpenMP execution.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-title">Multi-Client Chat Server</div>
+      <ul>
+        <li>Developed a C++ TCP-based multi-client chat system with user authentication, broadcast and private messaging, active-user tracking, and persistent chat history.</li>
+        <li>Implemented three server architectures using process-based, thread-based, and non-blocking event-driven concurrency models, with custom message framing and performance monitoring.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-title">Macro Java Compiler &amp; Optimization</div>
+      <ul>
+        <li>Developed compiler stages spanning lexical analysis, parsing, type checking, IR generation and lowering, register allocation, and MIPS code generation, including stack management and register spilling.</li>
+        <li>Implemented compiler analyses and optimization passes including control-flow graph construction, constant propagation, call-graph and class-hierarchy analysis, and function inlining for a Java-like language.</li>
+      </ul>
+    </div>
+
+    <h2>Positions of responsibility</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <div>
+          <div class="entry-title">Strategist, Programming Club</div>
+          <div class="entry-org">CFI, IIT Madras</div>
+        </div>
+        <div class="entry-date">May 2025 – Apr 2026</div>
+      </div>
+      <ul>
+        <li>Led and planned events, sessions, and contests for the club.</li>
+        <li>Contributed to the planning and conduction of sponsored events such as Bitshift 2026 and Deadlock 2026.</li>
+        <li>Conducted software development upskilling activities for coordinators.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <ul>
+        <li><strong>Student Representative, CS DCC</strong> — Jun 2024 (ongoing)</li>
+        <li><strong>Class Representative</strong> — Aug 2023 – Aug 2024</li>
+        <li><strong>Events Coordinator, Computer Science Association</strong> — Jan – May 2025</li>
+      </ul>
+    </div>
+
+    <h2>Achievements</h2>
+    <p style="margin-bottom:4px;"><strong>Scholastic</strong></p>
+    <ul>
+      <li>Sri K Krishnamurthi Award — 2nd highest CGPA, first year B.Tech./Dual Degree</li>
+      <li>JEE Advanced 2023 — AIR 140</li>
+      <li>JEE Mains 2023 — AIR 121</li>
+      <li>KVPY SA 2022 — AIR 360</li>
+      <li>TS EAMCET 2023 — AIR 32</li>
+      <li>AP EAPCET 2023 — AIR 117</li>
+      <li>NSE 2022 Physics — Top 1% India</li>
+      <li>NSE 2022 Chemistry — Top 1% India</li>
+    </ul>
+    <p style="margin-bottom:4px;"><strong>Programming</strong></p>
+    <ul>
+      <li>LeetCode Knight — 1897</li>
+      <li>Codeforces Expert — 1641</li>
+      <li>CodeChef 3-star — 1624</li>
+      <li>Rank 112 — CodeChef Starters 190</li>
+    </ul>
+
+    <h2>Extra-curricular</h2>
+    <ul>
+      <li>Trinity College of Music — Level 2 Certificate in Graded Examination in Music Performance, Grade 4 Piano with Merit.</li>
+    </ul>
+
+    <h2>Languages &amp; tools</h2>
+    <div class="tag-row">
+      <span class="tag">C</span>
+      <span class="tag">C++</span>
+      <span class="tag">Java</span>
+      <span class="tag">Python</span>
+      <span class="tag">CUDA</span>
+      <span class="tag">HDL Verilog</span>
+      <span class="tag">RISC-V</span>
+      <span class="tag">OCaml</span>
+      <span class="tag">Prolog</span>
+      <span class="tag">MySQL</span>
+      <span class="tag">HTML</span>
+      <span class="tag">CSS</span>
+      <span class="tag">JavaScript</span>
+    </div>
+
+    <h2>Relevant coursework</h2>
+    <p style="margin-bottom:4px;"><strong>Computer science:</strong> Data Structures and Algorithms, Computer Organization and Architecture, Object Oriented Programming, Operating Systems, Paradigms of Programming, Computer Networks, Pattern Recognition and Machine Learning, Advanced Compiler Design, GPU Programming (ongoing), Foundations of Cryptography (ongoing)</p>
+    <p><strong>Mathematics &amp; economics:</strong> Basic Graph Theory, Series and Matrices, Probability &amp; Statistics, Fundamentals of Operations Research, Principles of Economics</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

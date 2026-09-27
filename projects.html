@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Reuben Lawrence</title>
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem("theme");
+    if (t) document.documentElement.setAttribute("data-theme", t);
+  } catch (e) {}
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a href="index.html" class="brand">Reuben Lawrence</a>
+    <div class="nav-mid">
+      <ul class="navlinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="wrap">
+    <div class="context-line"></div>
+    <h1>Projects</h1>
+    <p class="lede">
+      A few things I've built — mostly compilers, with a couple of side
+      projects along the way.
+    </p>
+
+    <div class="project">
+      <h3>StarPlat MLIR Migration</h3>
+      <div class="context-line" style="margin-bottom:8px;">Earlier project, no longer active</div>
+      <div class="tag-row">
+        <span class="tag">MLIR</span>
+        <span class="tag">Compilers</span>
+      </div>
+      <ul>
+        <li>Developed the StarPlat-to-MLIR translation layer, converting StarPlat programs into a structured MLIR representation.</li>
+        <li>Enabled integration with a multi-backend compilation pipeline supporting sequential CPU and parallel OpenMP execution.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Multi-Client Chat Server</h3>
+      <div class="context-line" style="margin-bottom:8px;">Computer Networks course assignment</div>
+      <div class="tag-row">
+        <span class="tag">C++</span>
+        <span class="tag">TCP</span>
+      </div>
+      <ul>
+        <li>Built a C++ TCP-based multi-client chat system with user authentication, broadcast and private messaging, active-user tracking, and persistent chat history.</li>
+        <li>Explored process-based, thread-based, and non-blocking event-driven variants for the server as part of the assignment, with custom message framing.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Macro Java Compiler &amp; Optimization</h3>
+      <div class="tag-row">
+        <span class="tag">Java</span>
+        <span class="tag">MIPS</span>
+        <span class="tag">Compiler Optimization</span>
+      </div>
+      <ul>
+        <li>Developed compiler stages spanning lexical analysis, parsing, type checking, IR generation and lowering, register allocation, and MIPS code generation, including stack management and register spilling.</li>
+        <li>Implemented analyses and optimization passes including control-flow graph construction, constant propagation, call-graph and class-hierarchy analysis, and function inlining for a Java-like language.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
